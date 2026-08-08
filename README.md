@@ -1,4 +1,4 @@
-````markdown
+
 # Neural Style Transfer with AdaIN
 
 <p align="center">
@@ -661,5 +661,3 @@ https://github.com/Sahu-sunil-cpu
 
 This project is intended for educational and portfolio purposes.
 
-```
-```
