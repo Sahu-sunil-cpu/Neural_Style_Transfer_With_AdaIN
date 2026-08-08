@@ -641,10 +641,8 @@ def index():
                 stylized_image = style_transfer(
                     content_image,
                     style_image,
-                    encoder,
-                    decoder,
                     alpha,
-                    DEVICE
+                   
                 )
 
                 # ------------------------------------------------
