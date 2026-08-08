@@ -184,8 +184,8 @@ from wtforms import FileField, SubmitField, FloatField, HiddenField
 from PIL import Image
 from torchvision import transforms
 
-from nst.utils.models import VGGEncoder, Decoder
-from nst.utils.utils import adaptive_instance_normalization
+from utils.models import VGGEncoder, Decoder
+from utils.utils import adaptive_instance_normalization
 
 
 # ============================================================
