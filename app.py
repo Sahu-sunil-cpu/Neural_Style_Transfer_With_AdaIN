@@ -40,7 +40,7 @@ decoder = Decoder().to(device)
 # decoder.load_state_dict(torch.load('experiment/trial1/decoder_6.pth'))
 decoder.load_state_dict(
     torch.load(
-        "decoder_10.pth",
+        "experiment/trial1/decoder_6.pth",
         map_location=device
     )
 )
