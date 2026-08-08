@@ -52,14 +52,24 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']
 
 def style_transfer(content_image, style_image, encoder, decoder, alpha, device):
+    # content_transform = transforms.Compose([
+    #     transforms.Resize(512),
+    #     transforms.ToTensor()
+    # ])
+
+    # style_transform = transforms.Compose([
+    #     transforms.Resize(512),
+    #     transforms.ToTensor()
+    # ])
+    
     content_transform = transforms.Compose([
-        transforms.Resize(512),
-        transforms.ToTensor()
+    transforms.Resize((256, 256)),
+    transforms.ToTensor()
     ])
 
     style_transform = transforms.Compose([
-        transforms.Resize(512),
-        transforms.ToTensor()
+    transforms.Resize((256, 256)),
+    transforms.ToTensor()
     ])
     content_image = content_transform(content_image).unsqueeze(0).to(device)
     style_image = style_transform(style_image).unsqueeze(0).to(device)
