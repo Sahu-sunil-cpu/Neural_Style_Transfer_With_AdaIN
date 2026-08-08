@@ -1,0 +1,1 @@
+python train.py --batch_size 4 --epochs 10 --experiment trial1 --content_dir "AdaIn_Dataset/train_2/train_2" --style_dir "AdaIn_Dataset/test2017"
